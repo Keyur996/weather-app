@@ -14,9 +14,9 @@ const updateUI = ({ cityDetails, cityWeather }) => {
                           </div>
                       </div>`;
 
-  let timeSrc = cityWeather.IsDayTime ? "../img/day.svg" : "../img/night.svg";
+  let timeSrc = cityWeather.IsDayTime ? "./img/day.svg" : "./img/night.svg";
   img.setAttribute("src", timeSrc);
-  icon.setAttribute("src", `../img/icons/${cityWeather.WeatherIcon}.svg`);
+  icon.setAttribute("src", `./img/icons/${cityWeather.WeatherIcon}.svg`);
   if (card.classList.contains("d-none")) card.classList.remove("d-none");
 };
 
