@@ -1,6 +1,7 @@
 const SECREAT_KEY = "G1GIAEIuN2wdr3ji1fNcTpQWFKAL6447";
 
 const getWeather = async (key) => {
+  // made https
   const url = "https://dataservice.accuweather.com/currentconditions/v1/";
   const params = `${key}?apikey=${SECREAT_KEY}`;
 
